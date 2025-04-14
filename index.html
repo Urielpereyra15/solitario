@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Solitario</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <title>Juego de Solitario</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <h1>Juego de Solitario</h1>
-
-  <div class="tablero">
-    <div class="mazo" onclick="sacarCarta()">Mazo</div>
-    <div class="pila" id="pila">Pila</div>
+  <div class="juego">
+    <div id="mazo" class="carta">Mazo</div>
+    <div id="pila" class="carta">Pila</div>
   </div>
+  <div id="cartaMostrada"></div>
+
+  <div id="cartaMostrada">
+  <img id="imagenCarta" src="cartas/reverso.png" alt="Carta" width="100">
+</div>
 
   <script src="script.js"></script>
 </body>
